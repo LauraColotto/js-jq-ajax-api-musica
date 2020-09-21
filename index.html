@@ -16,7 +16,18 @@
             </div>
         </header>
 
-        <div class="cds-container container">
+        <div class=" container">
+          <select  id="selected" name="generi">
+            <option value="All">All</option>
+            <option value="Pop">Pop</option>
+            <option value="Rock">Rock</option>
+            <option value="Metal">Metal</option>
+            <option value="Jazz">Jazz</option>
+          </select>
+          <div class="cds-container">
+
+          </div>
+
             <!-- Disco ad esempio -->
             <!-- <div class="cd">
                 <img src="{{poster}}" alt="copertina">
@@ -29,15 +40,16 @@
 
 
         <!-- template -->
-        <script id="album-template" type="text/x-handlebars-template">
-          <div class="cd">
-              <img src="{{poster}}" alt="copertina">
-              <h3>{{title}}</h3>
-              <span class="author">{{author}}</span>
-              <span class="year">{{year}}</span>
-              <span class="genre">{{genre}}</span>
-          </div>
+
       </div>
+
+      <script id="album-template" type="text/x-handlebars-template">
+        <div class="cd" data-genere="{{genre}}">
+            <img src="{{poster}}" alt="copertina">
+            <h3>{{title}}</h3>
+            <span class="author">{{author}}</span>
+            <span class="year">{{year}}</span>
+        </div>
         </script>
 
         <script src="main.js" charset="utf-8"></script>

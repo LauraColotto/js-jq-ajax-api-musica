@@ -69,3 +69,8 @@ header img {
 .cd span.genre {
     color: grey;
 }
+
+
+#selected {
+text-align: center;
+}
